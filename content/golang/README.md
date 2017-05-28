@@ -2,7 +2,7 @@
 =======
 
 
-![句語言吉祥物](/mmrepo/project.png)
+![句語言吉祥物](/mmrepo/golang_mascot.png)
 
 就決定是你了 地鼠！
 

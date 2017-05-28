@@ -38,12 +38,12 @@
 
 
 <div class="imgInfo">
-    <a href="/mmrepo/project.png" target="_blank">
-        <img src="/mmrepo/project.png" />
+    <a href="/mmrepo/golang_mascot.png" target="_blank">
+        <img src="/mmrepo/golang_mascot.png" />
     </a>
     <ul>
         <li>連結：
-            <a href="/mmrepo/project.png" target="_blank">/mmrepo/project.png</a>
+            <a href="/mmrepo/golang_mascot.png" target="_blank">/mmrepo/golang_mascot.png</a>
         </li>
         <li>來源：
             <a href="https://golang.org/doc/gopher/project.png" target="_blank">https://golang.org/doc/gopher/project.png</a>
