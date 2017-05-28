@@ -29,6 +29,8 @@
 
 
 * [句語言吉祥物](#句語言吉祥物)
+* [摩卡標識](#摩卡標識)
+* [摩卡示範網站](#摩卡示範網站)
 
 
 
@@ -48,6 +50,48 @@
         </li>
         <li>使用頁面：
             <a href="/content/golang/README.md" target="_blank">句語言</a>
+        </li>
+    </ul>
+</div>
+
+
+
+## 摩卡標識
+
+
+<div class="imgInfo">
+    <a href="/mmrepo/mocha_logo.svg" target="_blank">
+        <img src="/mmrepo/mocha_logo.svg" />
+    </a>
+    <ul>
+        <li>連結：
+            <a href="/mmrepo/mocha_logo.svg" target="_blank">/mmrepo/mocha_logo.svg</a>
+        </li>
+        <li>來源：
+            <a href="https://mochajs.org/">Mocha - the fun, simple, flexible JavaScript test framework</a>
+        </li>
+        <li>使用頁面：
+            <a href="/content/javascript/developer_tool/mocha.md" target="_blank">摩卡</a>
+        </li>
+    </ul>
+</div>
+
+
+
+## 摩卡示範網站
+
+
+<div class="imgInfo">
+    <a href="/mmrepo/mocha_example/run_in_browser" target="_blank">
+        <img src="/mmrepo/any_file_icon.jpg" />
+    </a>
+    <ul>
+        <li>連結：
+            <a href="/mmrepo/mocha_example/run_in_browser" target="_blank">/mmrepo/mocha_example/run_in_browser</a>
+        </li>
+        <li>來源： 無</li>
+        <li>使用頁面：
+            <a href="/content/javascript/developer_tool/mocha.md" target="_blank">摩卡</a>
         </li>
     </ul>
 </div>
