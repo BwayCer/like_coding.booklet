@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://192.168.146.201:8088/module-commander.html
+-->
+<html lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+            JSDoc: Module: 指令操作器 commander
+        </title>
+        <link type="text/css" rel="stylesheet" href="prettify-tomorrow.css">
+        <link type="text/css" rel="stylesheet" href="jsdoc-default.css">
+    </head>
+
+    <body>
+        <div id="main">
+            <h1 class="page-title">
+                Module: 指令操作器 commander
+            </h1>
+            <section>
+                <header>
+                </header>
+                <article>
+                    <dl class="details">
+                        <dt class="tag-see">
+                            See:
+                        </dt>
+                        <dd class="tag-see">
+                            <ul>
+                                <li><a href="http://www.npmjs.com/package/commander">commander - npm</a></li>
+                                <li><a href="http://github.com/tj/commander.js">commander - GitHub</a></li>
+                                <li><a href="http://tj.github.io/commander.js/">commander - tj.github.io</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <h3 class="subsection-title">
+                        Members
+                    </h3>
+                    <h4 class="name" id="~__new_Command">
+                        <span class="type-signature">(inner)</span>
+                        __new_Command
+                        <span class="type-signature">
+                        </span>
+                    </h4>
+                    <div class="description">
+                        指令操作器以指令實例為單位的擴展。
+<pre>
+var program = require( 'commander' ); program.command(...);
+</pre>
+                        即便是最初的 `require( 'commander' )` 建立的主程式或是 `program.command` 建立的附屬指令都是指令實例的操作。
+                    </div>
+                    <dl class="details">
+                        <dt class="tag-see">
+                            See:
+                        </dt>
+                        <dd class="tag-see">
+                            <ul>
+                                <li>
+                                    github.com/tj/commander.js/blob/master/index
+                                    <a href="http://github.com/tj/commander.js/blob/master/index.js#L17">
+                                        #L17
+                                    </a>
+                                    、
+                                    <a href="http://github.com/tj/commander.js/blob/master/index.js#L161">
+                                        #L161
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <h4 class="name" id="~__step_tree">
+                        <span class="type-signature">
+                            (inner)
+                        </span>
+                        __step_tree
+                        <span class="type-signature">
+                        </span>
+                    </h4>
+                    <div class="description">
+                        指令建構之樹圖。
+<pre>
+└─┬ 主旨令 `require( 'commander' )`
+  ├── command # 有達到某些目的嗎？
+  ├── arguments
+  ├── usage
+  ├── description
+  ├── version
+  ├── option
+  ├── action
+  └─┬ 附屬指令 `program.command`
+    ├── command
+    ├── alias
+    ├── arguments
+    ├── usage
+    ├── description
+    ├── version # 不常見
+    ├── option
+    └── action
+</pre>
+                    </div>
+                    <h3 class="subsection-title">
+                        Methods
+                    </h3>
+                    <h4 class="name" id=".action">
+                        <span class="type-signature">
+                            (static)
+                        </span>
+                        action<span class="signature">()</span>
+                        <span class="type-signature">
+                        </span>
+                    </h4>
+                    <div class="description">
+                        指令動作。
+                        <br>
+                        其參數值見
+                        <a href="http://192.168.146.201:8088/module-commander.html#.arguments">
+                            module:commander.arguments
+                        </a>
+                        。
+                        <br>
+                        <span style="color: red">
+                            注意！ 建議只使用一次，否則其後 `&lt;Command&gt;` 將持續累加。
+                        </span>
+                    </div>
+                    <h5>
+                        Parameters:
+                    </h5>
+                    <table class="params">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Type
+                                </th>
+                                <th class="last">
+                                    Description
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="type">
+                                    <span class="param-type">
+                                        function
+                                    </span>
+                                </td>
+                                <td class="description last">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <dl class="details">
+                        <dt class="tag-see">
+                            See:
+                        </dt>
+                        <dd class="tag-see">
+                            <ul>
+                                <li>
+                                    github.com/tj/commander.js/blob/master/index
+                                    <a href="http://github.com/tj/commander.js/blob/master/index.js#L258">
+                                        #L258
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <h4 class="name" id=".alias">
+                        <span class="type-signature">
+                            (static)
+                        </span>
+                        alias<span class="signature">(alias)</span>
+                        <span class="type-signature">
+                        </span>
+                    </h4>
+                    <div class="description">
+                        指令別稱。
+                    </div>
+                    <h5>
+                        Parameters:
+                    </h5>
+                    <table class="params">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    Type
+                                </th>
+                                <th class="last">
+                                    Description
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="name">
+                                    <code>
+                                        alias
+                                    </code>
+                                </td>
+                                <td class="type">
+                                    <span class="param-type">
+                                        String
+                                    </span>
+                                </td>
+                                <td class="description last">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <dl class="details">
+                        <dt class="tag-see">
+                            See:
+                        </dt>
+                        <dd class="tag-see">
+                            <ul>
+                                <li>
+                                    github.com/tj/commander.js/blob/master/index.js
+                                    <a href="http://github.com/tj/commander.js/blob/master/index.js#L865">
+                                        L865
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <h4 class="name" id=".arguments">
+                        <span class="type-signature">
+                            (static)
+                        </span>
+                        arguments<span class="signature">(desc)</span>
+                        <span class="type-signature">
+                        </span>
+                    </h4>
+                    <div class="description">
+                        設定參數訊息。
+                        <br>
+                        以 `&lt;&gt;` 或 `[]` 為指令設定參數值描述，其結果將由
+                        <a href="http://192.168.146.201:8088/module-commander.html#.action">
+                            module:commander.action
+                        </a>
+                        接收。
+                        <br>
+                        <span style="color: red">
+                            注意！ 當設定此參數時，其後跟隨的參數視為拋棄。
+                        </span>
+<pre>假設設定： `command <n1> `
+用戶輸入： `./program command a b c ...`
+得到的結果： `a, &lt;Command&gt;, c, ...`
+// `b` 不見了！ // 若未設定，則其所得的結果為： `a, c, ..., &lt;Command&gt;`</pre>
+                    </div>
+                    <h5>
+                        Parameters:
+                    </h5>
+                    <table class="params">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    Type
+                                </th>
+                                <th class="last">
+                                    Description
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="name">
+                                    <code>
+                                        desc
+                                    </code>
+                                </td>
+                                <td class="type">
+                                    <span class="param-type">
+                                        String
+                                    </span>
+                                </td>
+                                <td class="description last">
+                                    參數訊息。
+                                    <br>
+                                    參數值以 `&lt;自訂描述&gt;` 表示必須，`[自訂描述]` 表示可選，如：`command &lt;str&gt;`。
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <dl class="details">
+                        <dt class="tag-see">
+                            See:
+                        </dt>
+                        <dd class="tag-see">
+                            <ul>
+                                <li>
+                                    github.com/tj/commander.js/blob/master/index.js
+                                    <a href="http://github.com/tj/commander.js/blob/master/index.js#L185">
+                                        L185
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <h4 class="name" id=".command">
+                        <span class="type-signature">
+                            (static)
+                        </span>
+                        command<span class="signature">(name,
+                            description<span class="signature-attributes">opt</span>
+                            , opts<span class="signature-attributes">opt</span>)</span>
+                        <span class="type-signature">
+                        </span>
+                    </h4>
+                    <div class="description">
+                        創建指令。
+                    </div>
+                    <h5>
+                        Parameters:
+                    </h5>
+                    <table class="params">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    Type
+                                </th>
+                                <th>
+                                    Attributes
+                                </th>
+                                <th class="last">
+                                    Description
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="name">
+                                    <code>
+                                        name
+                                    </code>
+                                </td>
+                                <td class="type">
+                                    <span class="param-type">
+                                        String
+                                    </span>
+                                </td>
+                                <td class="attributes">
+                                </td>
+                                <td class="description last">
+                                    指令名。
+                                    <br>
+                                    可以 `&lt;&gt;` 或 `[]` 設定參數值以描述，見
+                                    <a href="http://192.168.146.201:8088/module-commander.html#.arguments">
+                                        module:commander.arguments
+                                    </a>
+                                    。
+                                    <br>
+                                    若為 `*` 號，其效力等同主程式。
+                                    <span style="color: red">
+                                        效力無法影響旗標選項？。
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="name">
+                                    <code>
+                                        description
+                                    </code>
+                                </td>
+                                <td class="type">
+                                    <span class="param-type">
+                                        String
+                                    </span>
+                                </td>
+                                <td class="attributes">
+                                    &lt;optional&gt;
+                                    <br>
+                                </td>
+                                <td class="description last">
+                                    描述。
+                                    <br>
+                                    用於幫主程式寫描述？
+                                    <br>
+                                    若此參數有值時，
+                                    <span style="color: red">
+                                        主程式的幫助訊息
+                                    </span>
+                                    將在無任何選項和指令時自動顯示。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="name">
+                                    <code>
+                                        opts
+                                    </code>
+                                </td>
+                                <td class="type">
+                                    <span class="param-type">
+                                        Object
+                                    </span>
+                                </td>
+                                <td class="attributes">
+                                    &lt;optional&gt;
+                                    <br>
+                                </td>
+                                <td class="description last">
+                                    操作選項。
+                                    <h6>
+                                        Properties
+                                    </h6>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Name
+                                                </th>
+                                                <th>
+                                                    Type
+                                                </th>
+                                                <th>
+                                                    Attributes
+                                                </th>
+                                                <th class="last">
+                                                    Description
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="name">
+                                                    <code>
+                                                        isDefault
+                                                    </code>
+                                                </td>
+                                                <td class="type">
+                                                    <span class="param-type">
+                                                        Object
+                                                    </span>
+                                                </td>
+                                                <td class="attributes">
+                                                    &lt;optional&gt;
+                                                    <br>
+                                                </td>
+                                                <td class="description last">
+                                                    可執行外部檔案？
+                                                    <a href="http://github.com/tj/commander.js/blob/master/index.js#L547">
+                                                        L547
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="name">
+                                                    <code>
+                                                        noHelp
+                                                    </code>
+                                                </td>
+                                                <td class="type">
+                                                    <span class="param-type">
+                                                        Object
+                                                    </span>
+                                                </td>
+                                                <td class="attributes">
+                                                    &lt;optional&gt;
+                                                    <br>
+                                                </td>
+                                                <td class="description last">
+                                                    設指令為隱藏。
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <dl class="details">
+                        <dt class="tag-see">
+                            See:
+                        </dt>
+                        <dd class="tag-see">
+                            <ul>
+                                <li>
+                                    github.com/tj/commander.js/blob/master/index.js
+                                    <a href="http://github.com/tj/commander.js/blob/master/index.js#L158">
+                                        L158
+                                    </a>
+                                    、
+                                    <a href="http://github.com/tj/commander.js/blob/master/index.js#L165">
+                                        L165
+                                    </a>
+                                    、
+                                    <a href="http://github.com/tj/commander.js/blob/master/index.js#L440">
+                                        L440
+                                    </a>
+                                    、
+                                    <a href="http://github.com/tj/commander.js/blob/master/index.js#L198">
+                                        L198
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <h4 class="name" id=".description">
+                        <span class="type-signature">
+                            (static)
+                        </span>
+                        description<span class="signature">(msg)</span>
+                        <span class="type-signature">
+                        </span>
+                    </h4>
+                    <div class="description">
+                        指令描述。
+                    </div>
+                    <h5>
+                        Parameters:
+                    </h5>
+                    <table class="params">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    Type
+                                </th>
+                                <th class="last">
+                                    Description
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="name">
+                                    <code>
+                                        msg
+                                    </code>
+                                </td>
+                                <td class="type">
+                                    <span class="param-type">
+                                        String
+                                    </span>
+                                </td>
+                                <td class="description last">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <dl class="details">
+                        <dt class="tag-see">
+                            See:
+                        </dt>
+                        <dd class="tag-see">
+                            <ul>
+                                <li>
+                                    github.com/tj/commander.js/blob/master/index.js
+                                    <a href="http://github.com/tj/commander.js/blob/master/index.js#L851">
+                                        L851
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <h4 class="name" id=".help">
+                        <span class="type-signature">
+                            (static)
+                        </span>
+                        help<span class="signature">(callback)</span>
+                        <span class="type-signature">
+                        </span>
+                    </h4>
+                    <div class="description">
+                        顯示幫助。 調用此函式會觸發退出程序。
+                    </div>
+                    <h5>
+                        Parameters:
+                    </h5>
+                    <table class="params">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    Type
+                                </th>
+                                <th class="last">
+                                    Description
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="name">
+                                    <code>
+                                        callback
+                                    </code>
+                                </td>
+                                <td class="type">
+                                    <span class="param-type">
+                                        function
+                                    </span>
+                                </td>
+                                <td class="description last">
+                                    觸發幫助訊息前的通知並回傳輸出訊息。
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <dl class="details">
+                        <dt class="tag-see">
+                            See:
+                        </dt>
+                        <dd class="tag-see">
+                            <ul>
+                                <li>
+                                    github.com/tj/commander.js/blob/master/index
+                                    <a href="http://github.com/tj/commander.js/blob/master/index.js#L1052">
+                                        #L1052
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <h4 class="name" id=".on">
+                        <span class="type-signature">
+                            (static)
+                        </span>
+                        on<span class="signature">()</span>
+                        <span class="type-signature">
+                        </span>
+                    </h4>
+                    <div class="description">
+                        綁定事件。
+                        <br>
+                        查看主程式事件： `commander._events` 及附屬指令事件： `commander.commands[ n ]._events`
+                        。
+                        <br>
+                        <span style="color: red">
+                            注意！ 由於選項和指令皆由事件傳遞，所以要避免使用相同名稱。
+                        </span>
+                    </div>
+                    <h5>
+                        Parameters:
+                    </h5>
+                    <table class="params">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Type
+                                </th>
+                                <th class="last">
+                                    Description
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="type">
+                                    <span class="param-type">
+                                        String
+                                    </span>
+                                </td>
+                                <td class="description last">
+                                    事件名。 除了選項和指令外，還有隱藏的 `--help`。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="type">
+                                    <span class="param-type">
+                                        function
+                                    </span>
+                                </td>
+                                <td class="description last">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <h4 class="name" id=".option">
+                        <span class="type-signature">
+                            (static)
+                        </span>
+                        option<span class="signature">(flag, description, handle<span class="signature-attributes">opt</span>
+                            , defaultValue<span class="signature-attributes">opt</span>)</span>
+                        <span class="type-signature">
+                        </span>
+                    </h4>
+                    <div class="description">
+                        設定選項（旗標）。
+                        <br>
+                        * 若 `handle` 和 `defaultValue` 皆未設定，其為布林值。
+                        <br>
+                        <span style="color: red">
+                            注意！ 當主程式有相同選項事件時，附屬指令的事件將被忽略。
+                        </span>
+                    </div>
+                    <h5>
+                        Parameters:
+                    </h5>
+                    <table class="params">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    Type
+                                </th>
+                                <th>
+                                    Attributes
+                                </th>
+                                <th class="last">
+                                    Description
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="name">
+                                    <code>
+                                        flag
+                                    </code>
+                                </td>
+                                <td class="type">
+                                    <span class="param-type">
+                                        String
+                                    </span>
+                                </td>
+                                <td class="attributes">
+                                </td>
+                                <td class="description last">
+                                    選項名。
+                                    <br>
+                                    * 以 `-n` 單槓一單字，`--name` 或 `--name-long` 雙槓完整命名。
+                                    <br>
+                                    * 以 `,` 或 `|` 做分割，簡短旗標在前，空格不限，如：`-n, --name`。
+                                    <br>
+                                    * 若其後有參數需加以告知，否則其後跟隨值將被略過。
+                                    <br>
+                                    * 其擁有值僅限一個（不可有空格符）。
+                                    <br>
+                                    * 參數值以 `&lt;自訂描述&gt;` 表示必須，`[自訂描述]` 表示可選，如：`-n, --name &lt;str&gt;`。
+                                    <br>
+                                    <span style="color: red">
+                                        注意！ 雖說是可選，但其無值時卻無法觸動校驗函式。
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="name">
+                                    <code>
+                                        description
+                                    </code>
+                                </td>
+                                <td class="type">
+                                    <span class="param-type">
+                                        String
+                                    </span>
+                                </td>
+                                <td class="attributes">
+                                </td>
+                                <td class="description last">
+                                    描述。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="name">
+                                    <code>
+                                        handle
+                                    </code>
+                                </td>
+                                <td class="type">
+                                    <span class="param-type">
+                                        function
+                                    </span>
+                                    |
+                                    <span class="param-type">
+                                        RegExp
+                                    </span>
+                                </td>
+                                <td class="attributes">
+                                    &lt;optional&gt;
+                                    <br>
+                                </td>
+                                <td class="description last">
+                                    對使用者輸入的值進行校驗。
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="name">
+                                    <code>
+                                        defaultValue
+                                    </code>
+                                </td>
+                                <td class="type">
+                                    <span class="param-type">
+                                        *
+                                    </span>
+                                </td>
+                                <td class="attributes">
+                                    &lt;optional&gt;
+                                    <br>
+                                </td>
+                                <td class="description last">
+                                    旗標的預設值。
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <dl class="details">
+                        <dt class="tag-see">
+                            See:
+                        </dt>
+                        <dd class="tag-see">
+                            <ul>
+                                <li>
+                                    github.com/tj/commander.js/blob/master/index
+                                    <a href="http://github.com/tj/commander.js/blob/master/index.js#L39">
+                                        #L39
+                                    </a>
+                                    、
+                                    <a href="http://github.com/tj/commander.js/blob/master/index.js#L359">
+                                        #L359
+                                    </a>
+                                    、
+                                    <a href="http://github.com/tj/commander.js/blob/master/index.js#L670">
+                                        #L670
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <h5>
+                        Examples
+                    </h5>
+<pre class="prettyprint"><code>program
+    .option( '-o, --optional [value]', '可選值。' )
+    .option( '    --love &lt;name>', '最喜歡 &lt;name>。', 'You' )
+    .option( '-i, --integer &lt;n>', '正整數值。', parseInt )
+    .option( '-c, --count', '累進數值。', increaseCount, 0 )
+    // .option( '-c, --count [n]', '累進數值。', increaseCount, 0 )
+    .option( '-r, --range &lt;n>', '介於 2 到 5 的範圍。', /^(3|4)$/, '---' )
+    .parse( process.argv )
+;
+
+function increaseCount( numChoA, numTotal ) {
+    if ( numChoA ) numTotal += parseFloat( numChoA );
+    else numTotal++;
+    return numTotal;
+}</code></pre>
+
+<pre class="prettyprint"><code>program
+    .option( '-f, --flag', '旗標事件。', flagBelong( '主旨令' ) )
+    .command( 'testBA' )
+        .option( '-f, --flag', '旗標事件。', flagBelong( 'testBA' ) )
+    .parse( process.argv )
+;
+
+function flagBelong( strName ) {
+    return function () {
+        console.log( '旗標事件： ' + strName + ' --flag' );
+    };
+}</code></pre>
+                    <h4 class="name" id=".usage">
+                        <span class="type-signature">
+                            (static)
+                        </span>
+                        usage<span class="signature">(str)</span>
+                        <span class="type-signature">
+                        </span>
+                    </h4>
+                    <div class="description">
+                        簡短列出參數訊息。
+                        <br>
+                        基本上可使用預設值，主程式為 `[options] [command]`，附屬指令為 `[options]`。
+                    </div>
+                    <h5>
+                        Parameters:
+                    </h5>
+                    <table class="params">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    Type
+                                </th>
+                                <th class="last">
+                                    Description
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="name">
+                                    <code>
+                                        str
+                                    </code>
+                                </td>
+                                <td class="type">
+                                    <span class="param-type">
+                                        String
+                                    </span>
+                                </td>
+                                <td class="description last">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <dl class="details">
+                        <dt class="tag-see">
+                            See:
+                        </dt>
+                        <dd class="tag-see">
+                            <ul>
+                                <li>
+                                    github.com/tj/commander.js/blob/master/index
+                                    <a href="http://github.com/tj/commander.js/blob/master/index.js#L885">
+                                        #L885
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <h5>
+                        Example
+                    </h5>
+<pre class="prettyprint"><code>program
+    .usage( '[-h, --help]' )
+    .parse( process.argv )
+;</code></pre>
+                    <h4 class="name" id=".version">
+                        <span class="type-signature">
+                            (static)
+                        </span>
+                        version<span class="signature">(str, flag)</span>
+                        <span class="type-signature">
+                        </span>
+                    </h4>
+                    <div class="description">
+                        版本訊息。
+                        <br>
+                        <span style="color: red">
+                            注意！ 當主程式的版本號有事件時，附屬指令的事件將被忽略。
+                        </span>
+                        附屬指令的版本號較為鮮見。
+                    </div>
+                    <h5>
+                        Parameters:
+                    </h5>
+                    <table class="params">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    Type
+                                </th>
+                                <th class="last">
+                                    Description
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="name">
+                                    <code>
+                                        str
+                                    </code>
+                                </td>
+                                <td class="type">
+                                    <span class="param-type">
+                                        String
+                                    </span>
+                                </td>
+                                <td class="description last">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="name">
+                                    <code>
+                                        flag
+                                    </code>
+                                </td>
+                                <td class="type">
+                                    <span class="param-type">
+                                        String
+                                    </span>
+                                </td>
+                                <td class="description last">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <dl class="details">
+                        <dt class="tag-see">
+                            See:
+                        </dt>
+                        <dd class="tag-see">
+                            <ul>
+                                <li>
+                                    github.com/tj/commander.js/blob/master/index
+                                    <a href="http://github.com/tj/commander.js/blob/master/index.js#L715">
+                                        #L715
+                                    </a>
+                                    、
+                                    <a href="http://github.com/tj/commander.js/blob/master/index.js#L831">
+                                        #L831
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <h5>
+                        Example
+                    </h5>
+<pre class="prettyprint"><code>program
+    .version( '0.0.1' )
+    .parse( process.argv )
+;</code></pre>
+                </article>
+            </section>
+        </div>
+        <nav>
+            <h2>
+                <a href="http://192.168.146.201:8088/index.html">Home</a>
+            </h2>
+            <h3>
+                成員
+            </h3>
+            <ul>
+                <li><a href="#~__new_Command">__new_Command</a></li>
+                <li><a href="#~__step_tree">__step_tree</a></li>
+                <li><a href="#.action">action</a></li>
+                <li><a href="#.alias">alias</a></li>
+                <li><a href="#.arguments">arguments</a></li>
+                <li><a href="#.command">command</a></li>
+                <li><a href="#.description">description</a></li>
+                <li><a href="#.help">help</a></li>
+                <li><a href="#.on">on</a></li>
+                <li><a href="#.option">option</a></li>
+                <li><a href="#.usage">usage</a></li>
+                <li><a href="#.version">version</a></li>
+            </ul>
+        </nav>
+        <br class="clear">
+        <footer>
+            Documentation generated by
+            <a href="https://github.com/jsdoc3/jsdoc">
+                JSDoc 3.4.2
+            </a>
+            on Thu Jan 19 2017 15:09:24 GMT+0800 (CST)
+        </footer>
+
+        <script src="linenumber.js"> </script>
+    </body>
+
+</html>

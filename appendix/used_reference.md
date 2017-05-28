@@ -96,3 +96,70 @@
     </ul>
 </div>
 
+
+
+
+## 爪哇腳本編寫風格標識
+
+
+<div class="imgInfo">
+    <a href="/mmrepo/jscs_logo.png" target="_blank">
+        <img src="/mmrepo/jscs_logo.png" />
+    </a>
+    <ul>
+        <li>連結：
+            <a href="/mmrepo/jscs_logo.png" target="_blank">/mmrepo/jscs_logo.png</a>
+        </li>
+        <li>來源：
+            <a href="http://avatars0.githubusercontent.com/u/8018201" target="_blank">avatars0.githubusercontent.com/u/8018201</a>
+        </li>
+        <li>使用頁面：
+            <a href="/content/coding_env/code_style/jscs.md">爪哇腳本編寫風格</a>
+        </li>
+    </ul>
+</div>
+
+
+
+## npm_commander
+
+
+<div class="imgInfo">
+    <a href="/mmrepo/npm_commander/index.html" target="_blank">
+        <img src="/mmrepo/npm_commander/index.html" />
+    </a>
+    <ul>
+        <li>連結：
+            <a href="/mmrepo/jscs_logo.png" target="_blank">/mmrepo/jscs_logo.png</a>
+        </li>
+        <li>來源：
+            <a href="http://avatars0.githubusercontent.com/u/8018201" target="_blank">avatars0.githubusercontent.com/u/8018201</a>
+        </li>
+        <li>使用頁面：
+            <a href="/content/coding_env/commander.md">commander</a>
+        </li>
+    </ul>
+</div>
+
+
+
+## multimedia_repository.png
+
+
+<div class="imgInfo">
+    <a href="/mmrepo/multimedia_repository.png" target="_blank">
+        <img src="/mmrepo/multimedia_repository.png" />
+    </a>
+    <ul>
+        <li>連結：
+            <a href="/mmrepo/jscs_logo.png" target="_blank">/mmrepo/jscs_logo.png</a>
+        </li>
+        <li>來源：
+            <a href="http://clipart.me/4298/symbolicons-transportation" target="_blank">Symbolicons: Transportation, vector graphics - Clipart.me</a>
+        </li>
+        <li>使用頁面：
+            <a href="/content/coding_env/commander.md">commander</a>
+        </li>
+    </ul>
+</div>
+
