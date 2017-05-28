@@ -1,0 +1,422 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Heroku · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../appendix/" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../javascript/">
+            
+                <a href="../javascript/">
+            
+                    
+                    爪哇腳本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../javascript/developer_tool/">
+            
+                <a href="../javascript/developer_tool/">
+            
+                    
+                    開發者工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../javascript/developer_tool/mocha.html">
+            
+                <a href="../javascript/developer_tool/mocha.html">
+            
+                    
+                    摩卡
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../golang/">
+            
+                <a href="../golang/">
+            
+                    
+                    句語言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    雲端主機
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.2" data-path="heroku.html">
+            
+                <a href="heroku.html">
+            
+                    
+                    Heroku
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../appendix/">
+            
+                <a href="../../appendix/">
+            
+                    
+                    附錄
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../../appendix/bilingual.html">
+            
+                <a href="../../appendix/bilingual.html">
+            
+                    
+                    中譯詞彙對照
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../../appendix/used_reference.html">
+            
+                <a href="../../appendix/used_reference.html">
+            
+                    
+                    多媒體資源參考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Heroku</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="heroku">Heroku</h1><blockquote><p>2017.03.03</p></blockquote><h2 id="&#x524D;&#x8A00;">&#x524D;&#x8A00;</h2><p>&#x7D04;&#x83AB;&#x5728;&#x4E00;&#x5E74;&#x524D;&#x56E0;&#x540C;&#x4E8B;&#x7684;&#x4ECB;&#x7D39;&#x800C;&#x5F97;&#x77E5;&#x9019;&#x514D;&#x8CBB;&#x7684;&#x96F2;&#x7AEF;&#x5E73;&#x53F0;&#xFF0C;&#x4F46;&#x7B46;&#x8005;&#x5C1A;&#x672A;&#x6DF1;&#x5165;&#x5B78;&#x7FD2;&#xFF0C;&#x53EA;&#x5617;&#x8A66;&#x904E;&#x7DB2;&#x53CB;&#x7684;&#x7C21;&#x6613;&#x64CD;&#x4F5C;&#x800C;&#x5DF2;&#xFF0C;&#x5F8C;&#x53C8;&#x8A8D;&#x8B58; OpenShift &#x800C;&#x6253;&#x7B97;&#x6539;&#x7528;&#x3002;</p><h2 id="&#x9801;&#x7C64;">&#x9801;&#x7C64;</h2><ul><li><a href="#&#x7C21;&#x4ECB;">&#x7C21;&#x4ECB;</a>
+</li>
+<li><a href="#&#x5B89;&#x88DD;">&#x5B89;&#x88DD;</a>
+</li>
+<li><a href="#&#x6B77;&#x7A0B;">&#x6B77;&#x7A0B;</a>
+</li>
+<li><a href="#&#x672A;&#x6E2C;&#x8A66;&#x529F;&#x80FD;">&#x672A;&#x6E2C;&#x8A66;&#x529F;&#x80FD;</a>
+</li>
+<li><a href="#&#x53C3;&#x8003;">&#x53C3;&#x8003;</a>
+</li></ul>
+<h2 id="&#x7C21;&#x4ECB;">&#x7C21;&#x4ECB;</h2><p><a href="https://devcenter.heroku.com/" target="_blank">&#x5B98;&#x7DB2;</a></p><p><a href="https://www.heroku.com/pricing" target="_blank">&#x95DC;&#x65BC;&#x5B9A;&#x50F9;</a>&#xFF08;<strong>&#x514D;&#x8CBB;&#x7248;&#x9592;&#x7F6E;&#x4E09;&#x5341;&#x5206;&#x9418;&#x6703;&#x4F11;&#x7720;</strong>&#xFF09;</p><blockquote><p>&#x7DB2;&#x53CB;&#x8868;&#x793A;&#xFF1A; &#x4E0D;&#x9650;&#x5236;&#x7DB2;&#x7AD9;&#x6578;&#xFF0C;&#x4F46;&#x7E3D;&#x7A7A;&#x9593;&#x4E0A;&#x9650; 5 MB&#x3002;
+  &#xFF08;&#x898B;&#xFF1A;<a href="https://ruby-china.org/topics/1888" target="_blank">heroku&#x662F;&#x968F;&#x610F;&#x8BA9;&#x514D;&#x8D39;&#x7528;&#x975E;&#x521B;&#x5EFA;&#x65E0;&#x9650;&#x4E2A;&#x7AD9;&#x5417;&#xFF1F; &#xB7; Ruby China</a>&#xFF09;</p></blockquote><h2 id="&#x5B89;&#x88DD;">&#x5B89;&#x88DD;</h2><p>&#x5B89;&#x88DD;&#x7528;&#x6236;&#x7AEF;&#x8EDF;&#x9AD4;&#xFF1A;
+&#xFF08;<a href="https://devcenter.heroku.com/articles/heroku-command-line" target="_blank">&#x5B98;&#x65B9;&#x6559;&#x5B78;&#x9801;</a>&#xFF09;</p><pre><code>wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh</code></pre>
+<h2 id="&#x6B77;&#x7A0B;">&#x6B77;&#x7A0B;</h2><p>&#x767B;&#x5165;&#xFF1A;</p><pre><code>$ heroku login
+Enter your Heroku credentials.
+Email: mailname@example.com
+Password (typing will be hidden):
+Logged in as mailname@example.com</code></pre>
+<p>&#x5728; package.json &#x6A94;&#x88E1;&#x8A2D;&#x5B9A; Node &#x7248;&#x672C;&#xFF1A;&#xFF08;&#x4F7F;&#x7528; v6.5.x &#x4EE5;&#x4E0A;&#x7248;&#x672C;&#x7BC4;&#x4F8B;&#xFF09;</p><pre><code class="lang-json"><span class="hljs-string">&quot;engines&quot;</span>: {
+  <span class="hljs-string">&quot;node&quot;</span>: <span class="hljs-string">&quot;6.5.x&quot;</span>
+}</code></pre>
+<p>&#x5728; Procfile &#x6A94;&#x88E1;&#x8A2D;&#x5B9A;&#x555F;&#x52D5;&#x6307;&#x4EE4;&#xFF1A;&#xFF08;Node &#x7248;&#x7BC4;&#x4F8B;&#xFF09;</p><pre><code>web: node index.js</code></pre>
+<p>&#x95DC;&#x65BC; Procfile &#x6A94;&#x7684;&#x76F8;&#x95DC;&#x95B1;&#x8B80;&#xFF1A;</p><ul><li><a href="http://www.kancloud.cn/good-rain/manual/181955" target="_blank">Procfile - [ &#x4E91;&#x5E2E;&#x4F7F;&#x7528;&#x624B;&#x518C; ]</a>
+</li>
+<li><a href="https://devcenter.heroku.com/articles/procfile" target="_blank">Process Types and the Procfile | Heroku Dev Center</a>
+</li></ul>
+<h2 id="&#x672A;&#x6E2C;&#x8A66;&#x529F;&#x80FD;">&#x672A;&#x6E2C;&#x8A66;&#x529F;&#x80FD;</h2><p>&#x5EFA;&#x7ACB; SSL &#x9023;&#x7DDA;&#xFF1A;</p><pre><code>heroku keys:add</code></pre>
+<p>&#x8EDF;&#x9AD4;&#x5347;&#x7D1A;&#xFF1A;</p><pre><code>$ heroku update</code></pre>
+<h2 id="&#x53C3;&#x8003;">&#x53C3;&#x8003;</h2><ul><li><a href="http://cire.pixnet.net/blog/post/37369672" target="_blank">[NodeJS] &#x5C07;&#x7A0B;&#x5F0F;&#x90E8;&#x7F72;&#x5230; Heroku &#x4E0A; - NodeJS on Heroku @ &#x8CFD;&#x62C9;&#x7DAD;&#x7684;&#x79CB;&#x5929; :: &#x75DE;&#x5BA2;&#x90A6; PIXNET ::</a>
+</li>
+<li><a href="http://hiiamyes.logdown.com/posts/206488" target="_blank">&#x81EA;&#x5DF1;&#x7684;&#x7DB2;&#x7AD9;&#x81EA;&#x5DF1;&#x5BEB; - &#x628A; nodejs based website deploy &#x5230; heroku &#x4E0A; &#xAB; Code Hard &amp;&amp; Travel Hard</a>
+</li></ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 雲端主機">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../appendix/" class="navigation navigation-next " aria-label="Next page: 附錄">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Heroku","level":"4.2","depth":1,"next":{"title":"附錄","level":"5.1","depth":1,"path":"appendix/README.md","ref":"appendix/README.md","articles":[{"title":"中譯詞彙對照","level":"5.1.1","depth":2,"path":"appendix/bilingual.md","ref":"appendix/bilingual.md","articles":[]},{"title":"多媒體資源參考","level":"5.1.2","depth":2,"path":"appendix/used_reference.md","ref":"appendix/used_reference.md","articles":[]}]},"previous":{"title":"雲端主機","level":"4.1","depth":1,"path":"content/cloud_server/README.md","ref":"content/cloud_server/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/cloud_server/heroku.md","mtime":"2017-05-28T12:11:22.344Z","type":"markdown"},"gitbook":{"version":"3.2.1","time":"2017-05-28T13:40:35.571Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
