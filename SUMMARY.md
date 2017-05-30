@@ -11,6 +11,7 @@ Summary
 * [爪哇腳本](content/javascript/README.md)
 
 * [開發者工具](content/javascript/developer_tool/README.md)
+  * [爪哇腳本文件](content/javascript/developer_tool/jsdoc.md)
   * [摩卡](content/javascript/developer_tool/mocha.md)
 
 
